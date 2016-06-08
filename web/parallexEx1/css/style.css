@@ -1,0 +1,284 @@
+/*= GENERAL STYLING
+--------------------------------------------------------*/
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body#nagMeIndex{
+	text-align: center;
+}
+
+
+.center { margin: 0 auto; }
+
+section{
+	box-sizing: border-box;
+	/*border-bottom:solid 1px lightblue;*/
+	height: 100vh;
+	width: 100vw;
+}
+
+section img.imgBlock{
+	width:100%;
+	margin:30% 0;
+}
+
+.content{ 
+	padding:30px;
+	margin: 0 auto; 
+}
+
+
+p{
+	margin:0;
+}
+
+/*= NAVIGATION
+--------------------------------------------------------*/
+nav{
+	visibility:hidden;
+	position:fixed;
+	background-color:#000;
+	opacity: 0.5;
+	width:100%;
+	top:0;
+}
+
+#nav ul{
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	list-style: none;	
+}
+
+#nav li{
+	margin-top: 9px;	
+	float: left;
+	padding-left: 21px;
+}
+
+#nav li a { 
+	color: #fff; 
+	opacity:0.6; 
+	font-size: 16px; 
+	text-decoration: none;
+}
+
+#nav li a.active { 
+	color: #fff; 
+	opacity:1; 
+	border-bottom: 
+	2px solid #fff; 
+}
+
+#nav li a:hover { 
+	color: #fff; 
+	opacity:1;  
+}
+
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+
+h1{
+	font-family:'Teko', sans-serif;
+	font-weight:400;
+	font-size:27pt;
+	margin:0;
+}
+
+.bodyCopyLatoLight{
+	font-family:'Lato', sans-serif;
+	font-weight:300;
+	font-size:15pt;
+}
+
+.tekoRegular27{
+	font-family:'Teko', sans-serif;
+	font-weight:400;
+	font-size:27pt;
+	line-height:100%;
+	text-transform:uppercase;
+}
+
+.tekoSemiBold39{
+	font-family:'Teko', sans-serif;
+	font-weight:600;
+	font-size:27pt;
+	text-transform:uppercase;
+}
+
+.tekoBold45{
+	font-family:'Teko', sans-serif;
+	font-weight:600;
+	text-transform: uppercase;
+	font-size:39pt;
+}
+
+/*SLIDE 1*/
+/******************************/
+
+#slide1 .tekoStatement{
+	font-family:'Teko', sans-serif;
+	text-transform: uppercase;
+	line-height:100%;
+	margin-top:15%;
+	font-size:16vmax;
+	font-weight:600;
+}
+
+#slide1 .tekoStatement span{
+	font-size:24vmax;
+}
+
+#slide1 .tekoStatement br#slide1Spacing{
+	margin-bottom:15px;
+}
+
+#slide1 .tekoStatement span#ellipse{
+	position:relative;
+	top:-30px;
+}
+
+#slide1 .content p:nth-child(3){
+	letter-spacing: 5px;
+}
+
+#slide1 a{
+	text-decoration: none;
+	color:#000;
+}
+
+
+	/*SLIDE 1 media queries*/
+	/*******************************/
+	@media screen and (min-width:357px){
+
+		#slide1 .tekoStatement {
+			margin-top:25%;
+		} 
+
+	}
+
+	@media screen and (min-width:480px){
+
+		#slide1 .tekoStatement{
+			margin-top:5%;
+			line-height:90%;
+		}
+
+		#slide1 .tekoStatement br#slide1ellipseSpacing{
+			display:none;
+		}
+
+		#slide1 .tekoStatement span#ellipse{
+			position:initial;
+		}
+	}	
+
+#slide3 span, #slide7 span{
+	color:red;
+}
+
+#slide3 .content .bodyCopyLatoLight{
+	margin-top:30%;
+}
+
+#slide5 p{
+	margin-bottom:30%;
+}
+
+#slide5 .content .tekoRegular27{
+	margin-top:20%;
+}
+
+#slide5 span{
+	font-family: "Teko", sans-serif;
+	font-weight:400;
+	font-size:30pt;
+}
+
+#slide6 h1{
+	font-size:36pt;
+}
+
+#slide7 #because{
+	margin:10% 0;
+}
+
+#slide8 form input, #slide8 form button{
+	display:block;
+	width:100%;
+}
+
+#slide8 form{
+	margin:15% 0px;
+}
+
+#slide8 form input{
+	border:none;
+	border-bottom:solid 1px black;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:12pt;
+	margin-top:5%;
+	height:30px;
+}
+
+#slide8 form input #nagAboutInput{
+	color:red;
+}
+
+#slide8 form button{
+	padding: 5px 0 0;
+	margin:15px 0 0;
+	width:100%;
+	border:none;
+	background-color:#000;
+	color:#fff;
+	font-family: 'Teko', sans-serif;
+	font-size:21pt;
+	text-transform: uppercase;
+}
+
+/* SLIDE BACKGROUND COLORS */
+/****************************************/
+#slide1{
+	background-color:#A2A2D0;
+}
+
+#slide2{
+	background-color:#6699CC;
+}
+
+#slide3{
+	background-color:#0D98BA;
+}
+
+#slide4{
+	background-color:#7366BD;
+}
+
+#slide5{
+	background-color:#78DBE2;
+}
+
+#slide6{
+	background-color:#FDD9B5;
+}
+
+#slide7{
+	background-color:#CD9575;
+}
+
+#slide8{
+	background-color:#EFDECD;
+}
+
+#slide9{
+	background-color:#0D98BA;
+}
+
