@@ -11,7 +11,6 @@ body#nagMeIndex{
 	text-align: center;
 }
 
-
 .center { margin: 0 auto; }
 
 section{
@@ -29,14 +28,23 @@ section img.imgBlock{
 
 .content{ 
 	padding:30px;
-	margin: 0 auto; 
+	margin: 0 auto;
+	max-width:960px;
 }
 
 p{
 	margin:0;
 }
 
-/*= NAVIGATION
+.bottom{
+	position:absolute;
+	bottom:30px;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+/* NAVIGATION
 --------------------------------------------------------*/
 nav{
 	visibility:hidden;
@@ -47,7 +55,7 @@ nav{
 	top:0;
 }
 
-#nav ul{
+/*#nav ul{
 	list-style: none;
 	display: block;
 	margin: 0 auto;
@@ -77,7 +85,7 @@ nav{
 #nav li a:hover { 
 	color: #fff; 
 	opacity:1;  
-}
+}*/
 
 /* TYPE STYLING
 --------------------------------------------------------*/
@@ -129,7 +137,8 @@ h1{
 	font-family:'Teko', sans-serif;
 	text-transform: uppercase;
 	line-height:100%;
-	margin-top:15%;
+	/*margin-top:15%;*/
+	margin-top:5vh;
 	font-size:16vmax;
 	font-weight:600;
 }
@@ -153,13 +162,13 @@ h1{
 }
 
 #slide1 .bottom{
-	display:none;
 	position:absolute;
 	bottom:0;
 	left:47vw;
 }
 
 #slide1 img{
+	display:none;
 	max-width:60px;
 	width:7vw;
 	height:7vh;
@@ -168,18 +177,11 @@ h1{
 
 	/*SLIDE 1 media queries*/
 	/*******************************/
-	@media screen and (min-width:357px){
-
-		#slide1 .tekoStatement {
-			margin-top:25%;
-		} 
-
-	}
 
 	@media screen and (min-width:480px){
 
 		#slide1 .tekoStatement{
-			margin-top:0%;
+			/*margin-top:0%;*/
 			line-height:90%;
 		}
 
@@ -195,7 +197,7 @@ h1{
 	@media screen and (min-width:768px){
 		#slide1 .tekoStatement {
 			font-size:16vmin;
-			margin-top:25%;
+			margin-top:25vh;
 		}
 
 		#slide1 .tekoStatement span{
@@ -205,7 +207,7 @@ h1{
 
 	@media screen and (min-width:1024px){
 		#slide1 .tekoStatement {
-			margin-top:10%;
+			margin-top:15vh;
 			font-size:18vmin;
 		}
 
@@ -217,25 +219,71 @@ h1{
 
 
 
+/* SLIDE 2 */
+/*******************************/
+
+
+#slide2 .tekoRegular27{
+	margin-top:15vh;
+	font-size:21vmin;
+}
+
+#slide2 a .bodyCopyLatoLight{
+	letter-spacing:0.5vw;
+}
+
+#slide2 a{
+	text-decoration: none;
+	color:#000;
+}
+
+#slide2 img{
+	width:5vw;
+	height:5vh;
+}
+
+#slide2 .bottom{
+	position:absolute;
+	bottom:15vh;
+	text-align:center;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+	@media screen and (min-width:480px){
+		#slide2 .tekoRegular27{
+			margin-top:10vh;
+		}
+
+		#slide2 .bottom{
+			bottom:10vh;
+		}
+	}
+
+	@media screen and (min-width:641px){
+		#slide2 a .bodyCopyLatoLight{
+			margin-bottom:15px;
+		}
+	}
 
 
 
 
-
-
-
+/* SLIDE 3 */
+/**********************************/
 
 #slide3 span, #slide7 span{
 	color:red;
 }
 
-#slide3 .content .bodyCopyLatoLight{
-	margin-top:30%;
-}
 
-#slide5 p{
-	margin-bottom:30%;
-}
+
+
+
+
+
+
 
 #slide5 .content .tekoRegular27{
 	margin-top:20%;
@@ -346,7 +394,7 @@ h1{
 		font-size:8vmin;
 	}
 
-	#slide1 .bottom{
+	#slide1 img{
 		display:block;
 	}
 }
