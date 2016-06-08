@@ -85,14 +85,26 @@ nav{
 h1{
 	font-family:'Teko', sans-serif;
 	font-weight:400;
-	font-size:27pt;
+	font-size:9vmax;
 	margin:0;
+	position:relative;
+	top:-20px;
 }
 
 .bodyCopyLatoLight{
 	font-family:'Lato', sans-serif;
 	font-weight:300;
-	font-size:15pt;
+	font-size:6.5vmin;
+}
+
+@media screen and (min-width:641px){
+	.bodyCopyLatoLight{
+		font-size:1.75em;
+	}
+
+	h1{
+		font-size:8vmin;
+	}
 }
 
 .tekoRegular27{
@@ -142,13 +154,9 @@ h1{
 	top:-30px;
 }
 
-#slide1 .content p:nth-child(3){
-	letter-spacing: 5px;
-}
-
-#slide1 a{
-	text-decoration: none;
-	color:#000;
+#slide1 .content p.bodyCopyLatoLight{
+	position:relative;
+	top:-30px;
 }
 
 
@@ -165,7 +173,7 @@ h1{
 	@media screen and (min-width:480px){
 
 		#slide1 .tekoStatement{
-			margin-top:5%;
+			margin-top:0%;
 			line-height:90%;
 		}
 
@@ -177,6 +185,39 @@ h1{
 			position:initial;
 		}
 	}	
+
+	@media screen and (min-width:768px){
+		#slide1 .tekoStatement {
+			font-size:16vmin;
+			margin-top:25%;
+		}
+
+		#slide1 .tekoStatement span{
+			font-size:27vmin;
+		}
+	}
+
+	@media screen and (min-width:1024px){
+		#slide1 .tekoStatement {
+			margin-top:10%;
+			font-size:18vmin;
+		}
+
+		#slide1 .tekoStatement span{
+			font-size:30vmin;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
 
 #slide3 span, #slide7 span{
 	color:red;
