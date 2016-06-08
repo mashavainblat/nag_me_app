@@ -21,10 +21,6 @@ section{
 	position:relative;
 }
 
-section img.imgBlock{
-	width:100%;
-	margin:30% 0;
-}
 
 .content{ 
 	padding:30px;
@@ -42,7 +38,22 @@ p{
 	left:0;
 	right:0;
 	margin:auto;
+	padding:0 30px;
 }
+
+
+
+section img.imgBlock{
+	width:100%;
+	margin:30% 0;
+	position:absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	/*margin-top:10vh;*/
+}
+
+
 
 /* NAVIGATION
 --------------------------------------------------------*/
@@ -108,7 +119,7 @@ h1{
 .tekoRegular27{
 	font-family:'Teko', sans-serif;
 	font-weight:400;
-	font-size:27pt;
+	font-size:12vmin;
 	line-height:100%;
 	text-transform:uppercase;
 }
@@ -124,7 +135,7 @@ h1{
 	font-family:'Teko', sans-serif;
 	font-weight:600;
 	text-transform: uppercase;
-	font-size:39pt;
+	font-size:18vmin;
 }
 
 
@@ -273,46 +284,104 @@ h1{
 /* SLIDE 3 */
 /**********************************/
 
-#slide3 span, #slide7 span{
+
+
+/* SLIDE 4 */
+/*********************************/
+
+#slide4 p span.tekoBold45{
+	font-size:18vmin;
 	color:red;
 }
 
-
-
-
-
-
-
-
-
-#slide5 .content .tekoRegular27{
-	margin-top:20%;
+#slide4 p.tekoRegular27 span{
+	font-weight:600;
 }
 
-#slide5 span{
-	font-family: "Teko", sans-serif;
-	font-weight:400;
-	font-size:30pt;
+	@media screen and (max-height:360px){
+		#slide4 .tekoRegular27{
+			font-size:9vmin;
+		}
+
+		#slide4 p span.tekoBold45{
+			font-size:15vmin;
+		}
+	}
+
+
+
+/* SLIDE 5 */
+/**********************************/
+
+
+/* SLIDE 6 */
+/**********************************/
+
+
+
+#slide6 p span{
+	font-family:'Teko', sans-serif;
+	font-size:9vmin;
 }
 
-#slide6 h1{
-	font-size:36pt;
+#slide6 .content p:first-child{
+	margin-top:10vh;
 }
 
-#slide7 #because{
-	margin:10% 0;
+#slide6 p{
+	margin-bottom:10vh;
 }
 
-#slide8 form input, #slide8 form button{
+
+/* SLIDE 8 */
+/*********************************/
+
+#slide8 p.tekoBold45{
+	margin:5vh 0;
+}
+
+#slide8 p.tekoBold45 span{
+	color:red;
+}
+
+	@media screen and (min-width:360px){
+		#slide8 .lineBreak{
+			display:none;
+		}
+	}
+
+
+
+
+
+/* SLIDE 9 */
+/*********************************/
+
+#slide9 p{
+	position:absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	top:25vh;
+	padding:30px;
+}
+
+
+
+
+/* SLIDE 10 */
+/*********************************/
+
+#slide10 form input, #slide10 form button{
 	display:block;
 	width:100%;
 }
 
-#slide8 form{
+#slide10 form{
 	margin:15% 0px;
 }
 
-#slide8 form input{
+#slide10 form input{
 	border:none;
 	border-bottom:solid 1px black;
 	text-align: center;
@@ -323,11 +392,11 @@ h1{
 	height:30px;
 }
 
-#slide8 form input #nagAboutInput{
+#slide10 form input #nagAboutInput{
 	color:red;
 }
 
-#slide8 form button{
+#slide10 form button{
 	padding: 5px 0 0;
 	margin:15px 0 0;
 	width:100%;
@@ -377,7 +446,9 @@ h1{
 	background-color:#0D98BA;
 }
 
-
+#slide10{
+	background-color:#7366BD;
+}
 
 
 
